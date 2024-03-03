@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'portfolio';
+
+
+  scrollTo(elementID: string) { 
+    const element = document.getElementById(elementID)
+    if (elementID == 'education') { 
+      element?.scrollIntoView(false)
+
+    } else
+    {
+      element?.scrollIntoView()
+      
+      }
+
+  }
 }
